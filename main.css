@@ -1,0 +1,82 @@
+:root {
+    --ic-brand-global-nav-bgd: #fafafa !important;
+}
+
+/* Info box background */
+.eMdva_dnnz {
+    background-color: orange !important;
+}
+
+/* Home card heading text */
+.ic-DashboardCard__header-subtitle {
+    font-weight: Bolder !important;
+    font-size: 1.5rem !important;
+}
+
+/* Home card image container */
+.ic-DashboardCard__header_hero {
+    display: none;
+}
+
+.ic-DashboardCard__action > * {
+    fill: black !important;
+}
+
+#DashboardCard_Container {
+    padding-left: 24px !important;
+}
+
+#content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.ic-DashboardCard {
+    border: 0.0625rem solid #dadce0;
+    box-shadow: none;
+}
+
+.ic-DashboardCard:hover {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%) !important;
+    border: none !important;
+}
+
+#right-side-wrapper {
+    padding-left: 10px !important;
+}
+
+.todo-list-header > span {
+    visibility: hidden;
+    position: relative;
+}
+
+.todo-list-header > span::after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "TODO:";
+}
+
+.ic-app-header__menu-list-link {
+    border-radius: 10px !important;
+    padding: 3px !important;
+    margin-bottom: 4px !important;
+}
+
+.ic-app-header__main-navigation {
+    padding: 4px !important;
+}
+
+.ic-app-header__logomark {
+    margin: -4px !important;
+    margin-bottom: 8px !important;
+}
+
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+    background-color: #d6d6d6 !important;
+}
+
+.ic-app-header__menu-list-link:hover {
+    background-color: #e2e2e2 !important;
+}
