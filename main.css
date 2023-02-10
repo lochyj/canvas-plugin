@@ -13,6 +13,10 @@
     font-size: 1.5rem !important;
 }
 
+.ic-Dashboard-header__title {
+    margin-left: 10px !important;
+}
+
 /* Home card image container */
 .ic-DashboardCard__header_hero {
     display: none;
@@ -94,5 +98,26 @@ td:has(> img) {
 }
 
 tr:has(> td:has(> img)) {
-    height: none !important;
+    display: none !important;
+}
+
+.day_wrapper[role="link"] {
+    background-color: lightgreen !important;
+    border-radius: 5px !important;
+}
+
+td.today > .day_wrapper {
+    background-color: lightskyblue !important;
+    border-radius: 5px !important;
+}
+
+td.today > .day_wrapper[role="link"] {
+    background-color: red !important;
+    border-radius: 5px !important;
+}
+
+
+/* Custom elements */
+.links-container > div > a {
+    color: black;
 }

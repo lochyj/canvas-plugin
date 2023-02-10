@@ -3,11 +3,16 @@
   "name": "Canvas Extension",
   "version": "1.0",
   "description": "Modify the default canvas stylesheets to be more antithetically pleasing",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png" 
+  },
   "content_scripts": [
     {
       "js": ["main.js"],
       "css": [ "main.css" ],
-      "matches": ["https://jmss.instructure.com/*"],
+      "matches": ["https://*.instructure.com/*"],
       "run_at": "document_end"
     }
   ]
