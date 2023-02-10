@@ -7,6 +7,10 @@
     background-color: orange !important;
 }
 
+.ic-Dashboard-header__layout {
+    border: none !important;
+}
+
 /* Home card heading text */
 .ic-DashboardCard__header-subtitle {
     font-weight: Bolder !important;
@@ -15,6 +19,7 @@
 
 .ic-Dashboard-header__title {
     margin-left: 10px !important;
+    margin-top: 30px !important;
 }
 
 /* Home card image container */
@@ -48,6 +53,10 @@
     padding-left: 10px !important;
 }
 
+#upUGzyTxY6Ke {
+    padding-top: 30px !important;
+}
+
 .todo-list-header > span {
     visibility: hidden;
     position: relative;
@@ -58,7 +67,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: "TODO:";
+    content: "TODO";
+    font-weight: bolder;
 }
 
 .ic-app-header__menu-list-link {
