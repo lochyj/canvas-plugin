@@ -37,8 +37,7 @@
 }
 
 .ic-DashboardCard:hover {
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%) !important;
-    border: none !important;
+    box-shadow: 0 2px 4px 0 rgb(60 64 67 / 30%), 0 4px 12px 4px rgb(60 64 67 / 15%) !important;
 }
 
 #right-side-wrapper {
@@ -79,4 +78,21 @@
 
 .ic-app-header__menu-list-link:hover {
     background-color: #e2e2e2 !important;
+}
+
+.hidden-phone {
+    font-size: 1.9rem !important;
+    font-weight: bolder !important;
+}
+
+/* [role="presentation"] {
+    display: none !important;
+} */
+
+td:has(> img) {
+    display: none !important;
+}
+
+tr:has(> td:has(> img)) {
+    height: none !important;
 }
