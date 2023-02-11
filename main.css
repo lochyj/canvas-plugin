@@ -131,6 +131,21 @@ td.today > .day_wrapper[role="link"] {
     margin-top: 5px !important;
 }
 
+.ic-avatar {
+    border: none !important;
+}
+
+.fc-day-number {
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    line-height: 1.1 !important;
+    box-sizing: border-box !important;
+    max-height: fit-content !important;
+    outline-offset: none !important;
+    display: flex !important;
+    display: table-cell !important;
+}
+
 
 /* Custom elements */
 .links-container > div > a {

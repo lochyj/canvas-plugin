@@ -4,6 +4,19 @@ console.log("Canvas plugin loaded successfully");
 
 if (window.location.href.split("/")[3] == "courses") classesFormat();
 
+console.log(document.getElementsByClassName("fc-day-number"));
+
+generalFormat();
+
+function generalFormat() {
+
+    var accountSidebarButton = document.getElementById("global_nav_profile_link");
+    var accountSidebarIcon = accountSidebarButton.getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("img")[0];
+
+    accountSidebarIcon.src = chrome.runtime.getURL('icon.svg');
+
+}
+
 function classesFormat() {
     var course_syllabus = document.getElementById("course_syllabus");
     var quick_access_links = course_syllabus.getElementsByTagName("table")[0].getElementsByTagName("tbody")[0];
@@ -67,4 +80,6 @@ function classesFormat() {
         course_syllabus.appendChild(LinksContainer);
     }
 }
+
+
 
