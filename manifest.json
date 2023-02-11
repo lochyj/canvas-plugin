@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Canvas Extension",
-  "version": "1.0",
-  "description": "Modify the default canvas stylesheets to be more antithetically pleasing",
+  "version": "1.1",
+  "description": "Modify the default canvas stylesheets to have greater functionality and to be more antithetically pleasing",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
