@@ -146,43 +146,17 @@ td.today > .day_wrapper[role="link"] {
     display: table-cell !important;
 }
 
+.ic-DashboardCard__header-button i[class*=icon-]:before, .ic-DashboardCard__header-button i[class^=icon-]:before {
+    color: black !important;
+    background-color: inherit !important;
+}
+
+.ic-DashboardCard__header-title {
+    overflow-x: hidden !important;
+    max-width: 90%;
+}
 
 /* Custom elements */
 .links-container > div > a {
     color: black;
 }
-
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --ic-brand-global-nav-bgd: #1d1d1d !important;
-        --ic-brand-global-nav-menu-item__text-color: #fff !important;
-        --ic-brand-font-color-dark: #fff !important;
-    }
-
-    .ic-icon-svg {
-        fill: white !important;
-    }
-
-    body {
-        background-color: #1d1d1d;
-    }
-
-    .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
-        background-color: #333333 !important;
-        color: white !important;
-    }
-
-    a:active {
-        color: white !important;
-    }
-    
-    .ic-app-header__menu-list-link:hover {
-        background-color: #383838 !important;
-        color: white !important;
-    }
-
-    .ic-app-header__menu-list-link {
-        color: white !important;
-    }
-    
-} */

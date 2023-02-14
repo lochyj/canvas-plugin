@@ -15,6 +15,11 @@ function generalFormat() {
 
     accountSidebarIcon.src = chrome.runtime.getURL('icon.svg');
 
+    // get the color scheme of the user and use the dark icon if its dark
+    if (window.matchMedia('(prefers-color-scheme: dark)')) {
+        accountSidebarIcon.src = chrome.runtime.getURL('iconDark.svg');
+    }
+
 }
 
 function classesFormat() {
