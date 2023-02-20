@@ -122,7 +122,7 @@ td.today > .day_wrapper {
 }
 
 td.today > .day_wrapper[role="link"] {
-    background-color: red !important;
+    background-color: lightcoral !important;
     border-radius: 5px !important;
 }
 
