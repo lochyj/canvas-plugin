@@ -135,15 +135,45 @@ td.today > .day_wrapper[role="link"] {
     border: none !important;
 }
 
-.fc-day-number {
+thead tr td.fc-day-number {
     font-size: 1rem !important;
     font-weight: normal !important;
     line-height: 1.1 !important;
-    box-sizing: border-box !important;
-    max-height: fit-content !important;
+    box-sizing: content-box !important;
+    max-height: min-content !important;
     outline-offset: none !important;
     display: flex !important;
     display: table-cell !important;
+    border: none !important;
+    overflow-y: hidden !important;
+}
+
+/* THIS TOOK TOO LONG TO FIND */
+tbody tr td::after {
+    height: 22.59px !important;
+    border-radius: 5px !important;
+    background-color: lightskyblue !important;
+    border: lightcyan !important;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+
+.fc-state-highlight {
+    background-color: lightgreen !important;
+    border-radius: 5px !important;
+    color: #000 !important;
+}
+
+tbody tr td {
+    background-color: none !important;
+}
+
+.fc-day-number::after {
+    content: none !important;
+}
+
+.fc-day-number::before {
+    content: none !important;
 }
 
 .ic-DashboardCard__header-button i[class*=icon-]:before, .ic-DashboardCard__header-button i[class^=icon-]:before {

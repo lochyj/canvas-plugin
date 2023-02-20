@@ -4,8 +4,6 @@ console.log("Canvas plugin loaded successfully");
 
 if (window.location.href.split("/")[3] == "courses") classesFormat();
 
-console.log(document.getElementsByClassName("fc-day-number"));
-
 generalFormat();
 
 function generalFormat() {
@@ -14,11 +12,6 @@ function generalFormat() {
     var accountSidebarIcon = accountSidebarButton.getElementsByTagName("div")[0].getElementsByTagName("div")[0].getElementsByTagName("img")[0];
 
     accountSidebarIcon.src = chrome.runtime.getURL('icon.svg');
-
-    // get the color scheme of the user and use the dark icon if its dark
-    if (window.matchMedia('(prefers-color-scheme: dark)')) {
-        accountSidebarIcon.src = chrome.runtime.getURL('iconDark.svg');
-    }
 
 }
 
