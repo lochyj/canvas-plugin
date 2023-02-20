@@ -5,30 +5,6 @@ console.log("Canvas plugin loaded successfully");
 if (window.location.href.split("/")[3] == "courses") classesFormat();
 
 generalFormat();
-classesReRender();
-
-function classesReRender() {
-    var leftContainer = document.getElementById("left-side");
-    var container = document.getElementById("sticky-container");
-    var courseContentContainer = document.getElementById("course_home_content");
-
-    var assignmentsLink = container.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].getElementsByTagName("li")[1].getElementsByTagName("a")[0];
-    var homeLink = container.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].getElementsByTagName("li")[0].getElementsByTagName("a")[0];
-    var gradesLink = container.getElementsByTagName("nav")[0].getElementsByTagName("ul")[0].getElementsByTagName("li")[3].getElementsByTagName("a")[0];
-
-    var homeURL = homeLink.href;
-    var assignmentsURL = assignmentsLink.href;
-
-    console.log(assignmentsURL)
-
-    leftContainer.style.display = "none";
-
-    var minimizeSidebarButton = document.getElementById("courseMenuToggle");
-    minimizeSidebarButton.click();
-    minimizeSidebarButton.parentElement.removeChild(minimizeSidebarButton);
-
-    document.getElementById("main").style.marginLeft = "10px";
-}
 
 function generalFormat() {
 
